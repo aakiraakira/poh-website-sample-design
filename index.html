@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exceed Excellence | Leader Development Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a', // Deep Navy
+                        secondary: '#14b8a6', // Teal
+                        accent: '#f59e0b', // Gold/Amber
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .scroll-hidden::-webkit-scrollbar { display: none; }
+        .fade-in-up { animation: fadeInUp 0.8s ease-out forwards; opacity: 0; transform: translateY(20px); }
+        @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.location.href='index.html'">
+                    <div class="w-10 h-10 bg-secondary rounded-tl-xl rounded-br-xl flex items-center justify-center text-white font-bold text-xl">E</div>
+                    <span class="font-serif text-2xl font-bold text-primary">Exceed<span class="text-secondary">Excellence</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-secondary font-medium">Home</a>
+                    <a href="who-we-are.html" class="text-gray-600 hover:text-secondary transition">Who We Are</a>
+                    <a href="leadership.html" class="text-gray-600 hover:text-secondary transition">Leadership</a>
+                    <a href="training.html" class="text-gray-600 hover:text-secondary transition">Training</a>
+                    <a href="#contact" class="bg-primary text-white px-5 py-2 rounded-full hover:bg-secondary transition shadow-lg hover:shadow-xl">Contact Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-secondary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-secondary font-medium bg-gray-50 rounded-md">Home</a>
+                <a href="who-we-are.html" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md">Who We Are</a>
+                <a href="leadership.html" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md">Leadership</a>
+                <a href="training.html" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-md">Training</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-primary">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Leadership" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-transparent"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-white space-y-6 fade-in-up" style="animation-delay: 0.1s;">
+                <div class="inline-block px-4 py-1 border border-secondary/50 rounded-full bg-secondary/10 text-secondary text-sm font-semibold tracking-wide mb-2">
+                    PREMIER CORPORATE TRAINING
+                </div>
+                <h1 class="text-5xl md:text-6xl font-serif font-bold leading-tight">
+                    Leader <br> <span class="text-secondary">Development</span> <br> Experience
+                </h1>
+                <p class="text-lg text-gray-300 max-w-lg">
+                    Elevate your people's business potential with our 6-month program designed to create high-performance leaders.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#contact" class="bg-secondary text-white px-8 py-4 rounded-full font-semibold hover:bg-teal-500 transition transform hover:-translate-y-1 shadow-lg shadow-teal-500/30 text-center">
+                        Free 60-min Discovery Session
+                    </a>
+                    <a href="leadership.html" class="border border-white/30 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition text-center">
+                        Explore Programs
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-12 md:mt-0 relative fade-in-up" style="animation-delay: 0.3s;">
+                <!-- Decorative Elements -->
+                <div class="absolute -top-10 -right-10 w-32 h-32 bg-accent/20 rounded-full blur-2xl"></div>
+                <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-secondary/20 rounded-full blur-2xl"></div>
+                
+                <div class="glass-card p-8 rounded-2xl shadow-2xl border border-white/10 relative z-10">
+                    <div class="flex items-start space-x-4 mb-6">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="CEO" class="w-16 h-16 rounded-full object-cover border-2 border-secondary">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">Your Breakthrough Begins Here</h3>
+                            <p class="text-sm text-gray-500">Join thousands of leaders transforming their careers.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-xl text-center">
+                            <span class="block text-2xl font-bold text-primary">15k+</span>
+                            <span class="text-xs text-gray-500 uppercase tracking-wider">Lives Touched</span>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-xl text-center">
+                            <span class="block text-2xl font-bold text-secondary">22</span>
+                            <span class="text-xs text-gray-500 uppercase tracking-wider">Industries Served</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas of Expertise -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">Pick an Area to Start</h2>
+                <p class="text-gray-600">Customized pathways to accelerate your organizational growth.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer h-80">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Leadership Training" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4 text-white">
+                            <i class="fas fa-users text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Leadership Training</h3>
+                        <p class="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition duration-300 transform translate-y-4 group-hover:translate-y-0">
+                            Build resilient teams and future-proof your management strategies.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer h-80">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Executive Coaching" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4 text-white">
+                            <i class="fas fa-lightbulb text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Executive Coaching</h3>
+                        <p class="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition duration-300 transform translate-y-4 group-hover:translate-y-0">
+                            Unlock personal potential with 1-on-1 mentorship from industry experts.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer h-80">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Team Development" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-4 text-white">
+                            <i class="fas fa-hands-helping text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Team Development</h3>
+                        <p class="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition duration-300 transform translate-y-4 group-hover:translate-y-0">
+                            Foster collaboration and synergy within your diverse workforce.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Grid -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/3 space-y-6">
+                    <h4 class="text-secondary font-bold tracking-wider uppercase">Our Specialties</h4>
+                    <h2 class="text-4xl font-serif font-bold text-primary">Explore Our Core Competencies</h2>
+                    <p class="text-gray-600 text-lg">
+                        Gain a competitive advantage with our signature soft skills training programmes and tools. We focus on what matters most: Results.
+                    </p>
+                    <a href="leadership.html" class="inline-flex items-center text-primary font-semibold hover:text-secondary transition">
+                        View All Programs <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="lg:w-2/3 grid sm:grid-cols-2 gap-6">
+                    <!-- Feature 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-teal-50 rounded-full flex items-center justify-center text-secondary mb-4">
+                            <i class="fas fa-brain text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Leader Development Experience (LDE)</h3>
+                        <p class="text-gray-500 text-sm">Immersive simulations to test and grow leadership reflexes.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 mb-4">
+                            <i class="fas fa-user-check text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Personality Plus+</h3>
+                        <p class="text-gray-500 text-sm">Understanding self and others for better workplace harmony.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-amber-50 rounded-full flex items-center justify-center text-amber-500 mb-4">
+                            <i class="fas fa-cubes text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Six Seasons (6S) Model</h3>
+                        <p class="text-gray-500 text-sm">Navigating organizational lifecycles with strategic foresight.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                        <div class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center text-red-500 mb-4">
+                            <i class="fas fa-th-large text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">The 6 Types of Working Genius</h3>
+                        <p class="text-gray-500 text-sm">Identifying your natural talents to boost productivity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Strip -->
+    <section class="py-12 bg-white border-y border-gray-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 text-center mb-8">
+            <p class="text-gray-400 font-medium uppercase tracking-widest text-sm">Trusted by Industry Leaders</p>
+        </div>
+        <div class="relative flex overflow-x-hidden group">
+            <div class="py-12 animate-marquee whitespace-nowrap flex gap-16 items-center opacity-50 grayscale hover:grayscale-0 transition duration-500">
+                <span class="text-2xl font-bold text-gray-400">INTEL</span>
+                <span class="text-2xl font-bold text-gray-400">ASTRO</span>
+                <span class="text-2xl font-bold text-gray-400">WOMEN ENTREPRENEUR</span>
+                <span class="text-2xl font-bold text-gray-400">BFM 89.9</span>
+                <span class="text-2xl font-bold text-gray-400">AMBANK</span>
+                <span class="text-2xl font-bold text-gray-400">MAYBANK</span>
+                <!-- Repeat for loop effect -->
+                <span class="text-2xl font-bold text-gray-400">INTEL</span>
+                <span class="text-2xl font-bold text-gray-400">ASTRO</span>
+                <span class="text-2xl font-bold text-gray-400">WOMEN ENTREPRENEUR</span>
+                <span class="text-2xl font-bold text-gray-400">BFM 89.9</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Footer Top -->
+    <section class="bg-gradient-to-br from-primary to-slate-800 py-20 text-white text-center relative overflow-hidden" id="contact">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Maximise Your People's Potential</h2>
+            <p class="text-lg text-gray-300 mb-10">
+                Contact us now to see how Exceed Excellence can position your people for sustainable success.
+            </p>
+            <button class="bg-white text-primary px-10 py-4 rounded-full font-bold hover:bg-secondary hover:text-white transition-all duration-300 shadow-xl transform hover:scale-105">
+                Contact Us Today
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-8 h-8 bg-secondary rounded flex items-center justify-center text-white font-bold">E</div>
+                    <span class="text-xl font-serif text-white">Exceed Excellence</span>
+                </div>
+                <p class="text-sm">Transforming businesses through leadership, culture, and strategy. Based in Malaysia, serving the globe.</p>
+            </div>
+            <div>
+                <h5 class="text-white font-bold mb-4">Quick Links</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-secondary">Home</a></li>
+                    <li><a href="who-we-are.html" class="hover:text-secondary">About Us</a></li>
+                    <li><a href="leadership.html" class="hover:text-secondary">Services</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-bold mb-4">Programs</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-secondary">Executive Coaching</a></li>
+                    <li><a href="#" class="hover:text-secondary">Team Development</a></li>
+                    <li><a href="#" class="hover:text-secondary">Personality Plus+</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-white font-bold mb-4">Get In Touch</h5>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-secondary hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-secondary hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-secondary hover:text-white transition"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-12 pt-8 border-t border-gray-800 text-xs">
+            &copy; 2025 Exceed Excellence Sdn Bhd. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Scroll Animation Trigger
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+        
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
